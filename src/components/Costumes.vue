@@ -8,25 +8,13 @@
       </p>
     </div>
 
-    <div class="flex gap-6 flex-wrap mt-5 w-[95%] items-center justify-center">
-      <Card
-        v-for="item in cardFantasy"
-        :key="item.title"
-        class="flex flex-col border border-gray-800 bg-[#111111] p-3 items-center justify-center rounded-xl w-[169px] h-[170px]"
-      >
-        <CardHeader>
-          <img :src="item.icon" :alt="item.title" width="40px" />
-        </CardHeader>
-        <CardTitle class="text-2xl font-bold text-center">{{ item.title }} </CardTitle>
-        <CardFooter class="text-gray-600 text-sm text-center mt-1"> {{ item.footer }} </CardFooter>
-      </Card>
-    </div>
+    <CardCostumes />
 
     <div
-      class="bg-[#211E1C80] w-[95%] h-[206px] mt-9 border border-[#F06E4233] rounded-lg flex flex-col items-center justify-center gap-3"
+      class="bg-[#211E1C80] w-[90%] h-[206px] mt-9 border border-[#F06E4233] rounded-lg flex flex-col items-center justify-center gap-3"
     >
       <h3>🏆 Concurso de Fantasias!</h3>
-      <p class="text-[#BEB4A7] m-2">Melhor fantasia ganha um prêmio especial! Prepare-se para competir.</p>
+      <p class="text-[#BEB4A7] m-2 text-lg">Melhor fantasia ganha um prêmio especial! Prepare-se para competir.</p>
       <Button
         variant="default"
         class="flex gap-2 border-none hover:cursor-pointer items-center justify-center p-5"
@@ -39,45 +27,8 @@
 </template>
 
 <script setup lang="ts">
-import type { CardItemCostumes } from './models/Halloween.interface'
-import Card from './ui/card/Card.vue'
-import CardFooter from './ui/card/CardFooter.vue'
-import CardHeader from './ui/card/CardHeader.vue'
-import CardTitle from './ui/card/CardTitle.vue'
 import Button from './ui/button/Button.vue'
-
-const cardFantasy: CardItemCostumes[] = [
-  {
-    icon: '/dracula.png',
-    title: 'Vampiro',
-    footer: 'Clássico e elegante',
-  },
-  {
-    icon: '/witch.png',
-    title: 'Bruxa',
-    footer: 'Misteriosa e poderosa',
-  },
-  {
-    icon: '/ghost.png',
-    title: 'Fantasma',
-    footer: 'Assustador e simples',
-  },
-  {
-    icon: '/zumbi.png',
-    title: 'Zumbi',
-    footer: 'Morto-vivo faminto',
-  },
-  {
-    icon: '/clown.png',
-    title: 'Palhaço',
-    footer: 'Terrível e divertido',
-  },
-  {
-    icon: '/werewolf.png',
-    title: 'Lobisomem',
-    footer: 'Selvagem e feroz',
-  },
-]
+import CardCostumes from './Cards/CardCostumes.vue'
 </script>
 
 <style scoped>

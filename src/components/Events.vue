@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts" setup>
-import CardEvents from './CardEvents.vue';
+import CardEvents from './Cards/CardEvents.vue';
 
 </script>
 

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Costumes from './components/Costumes.vue';
 import Events from './components/Events.vue';
 import Header from './components/Header.vue';
 
@@ -7,6 +8,7 @@ import Header from './components/Header.vue';
 <template>
   <Header />
   <Events />
+  <Costumes />
 </template>
 
 <style scoped>

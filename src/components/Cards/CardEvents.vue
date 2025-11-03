@@ -14,7 +14,7 @@
     </Card>
 
     <Card
-      class="flex flex-col gap-3 border border-gray-800 bg-[#111111] p-3 items-center justify-center rounded-xl w-[259px] h-[194px"
+      class="flex flex-col gap-3 border border-gray-800 bg-[#111111] p-3 items-center justify-center rounded-xl w-[259px] h-[194px]"
     >
       <CardHeader>
         <img src="/clock.svg" alt="clock icon" />
@@ -27,7 +27,7 @@
     </Card>
 
     <Card
-      class="flex flex-col gap-3 border border-gray-800 bg-[#111111] p-3 items-center justify-center rounded-xl w-[259px] h-[194px"
+      class="flex flex-col gap-3 border border-gray-800 bg-[#111111] p-3 items-center justify-center rounded-xl w-[259px] h-[194px]"
     >
       <CardHeader>
         <img src="/map.svg" alt="map icon" />
@@ -40,7 +40,7 @@
     </Card>
 
     <Card
-      class="flex flex-col gap-3 border border-gray-800 bg-[#111111] p-3 items-center justify-center rounded-xl w-[259px] h-[194px"
+      class="flex flex-col gap-3 border border-gray-800 bg-[#111111] p-3 items-center justify-center rounded-xl w-[259px] h-[194px]"
     >
       <CardHeader>
         <img src="/peoples.svg" alt="peoples icon" />
@@ -54,12 +54,12 @@
   </section>
 </template>
 
-<script lang="ts">
-import Card from './ui/card/Card.vue'
-import CardDescription from './ui/card/CardDescription.vue'
-import CardFooter from './ui/card/CardFooter.vue'
-import CardHeader from './ui/card/CardHeader.vue'
-import CardTitle from './ui/card/CardTitle.vue'
+<script setup lang="ts">
+import Card from '../ui/card/Card.vue'
+import CardDescription from '../ui/card/CardDescription.vue'
+import CardFooter from '../ui/card/CardFooter.vue'
+import CardHeader from '../ui/card/CardHeader.vue'
+import CardTitle from '../ui/card/CardTitle.vue'
 </script>
 
 <style></style>

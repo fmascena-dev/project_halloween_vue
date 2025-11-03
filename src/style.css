@@ -42,6 +42,9 @@
   --font-family: 'Roboto';
   --font-title: 'Creepster';
   --btn-primary: rgba(240, 110, 66, 1);
+  --color-primary: #732eb8;
+  --color-secondary: #f06e42;
+
 }
 
 .dark {
@@ -85,25 +88,16 @@
     color: var(--background);
     font-family: var(--font-family);
   }
-  
+
   h1 {
     font-family: var(--font-title);
-    background-image: linear-gradient(354deg, rgba(115, 46, 184, 1) 40%, rgba(240, 110, 66, 1) 70%);
+    background-image: linear-gradient(354deg, var(--color-primary) 40%, var(--color-secondary) 70%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    color: #0a0a0a
-    /* font-size: 80px; */
   }
 
-  /* h2 {
-    font-family: var(--font-title);
-    background-image: linear-gradient(345deg, rgba(115, 46, 184, 1) 50%, rgba(240, 110, 66, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-  } */
-}
+  
 
+}
